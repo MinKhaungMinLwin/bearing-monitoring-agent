@@ -1,0 +1,173 @@
+time,idx,bearing,why,status,fault,confidence
+2004-02-13 10:32:39,144,1,periodic,normal,none,1.0
+2004-02-13 10:32:39,144,2,periodic,normal,none,1.0
+2004-02-13 10:32:39,144,3,periodic,normal,none,1.0
+2004-02-13 10:32:39,144,4,periodic,normal,none,1.0
+2004-02-13 22:32:39,216,1,periodic,normal,none,1.0
+2004-02-13 22:32:39,216,2,periodic,normal,none,1.0
+2004-02-13 22:32:39,216,3,periodic,normal,none,1.0
+2004-02-13 22:32:39,216,4,periodic,normal,none,1.0
+2004-02-14 10:32:39,288,1,periodic,normal,none,1.0
+2004-02-14 10:32:39,288,2,periodic,normal,none,1.0
+2004-02-14 10:32:39,288,3,periodic,normal,none,1.0
+2004-02-14 10:32:39,288,4,periodic,normal,none,1.0
+2004-02-14 22:32:39,360,1,periodic,normal,none,1.0
+2004-02-14 22:32:39,360,2,periodic,normal,none,1.0
+2004-02-14 22:32:39,360,3,periodic,watch,none,0.7
+2004-02-14 22:32:39,360,4,periodic,normal,none,1.0
+2004-02-15 10:32:39,432,1,periodic,normal,none,1.0
+2004-02-15 10:32:39,432,2,periodic,watch,none,0.7
+2004-02-15 10:32:39,432,3,periodic,watch,none,0.7
+2004-02-15 10:32:39,432,4,periodic,normal,none,1.0
+2004-02-15 22:32:39,504,1,periodic,normal,none,1.0
+2004-02-15 22:32:39,504,2,periodic,watch,none,0.7
+2004-02-15 22:32:39,504,3,periodic,watch,none,0.7
+2004-02-15 22:32:39,504,4,periodic,normal,none,1.0
+2004-02-16 10:32:39,576,1,periodic,watch,none,0.7
+2004-02-16 10:32:39,576,2,periodic,watch,none,0.7
+2004-02-16 10:32:39,576,3,periodic,watch,none,0.7
+2004-02-16 10:32:39,576,4,periodic,normal,none,1.0
+2004-02-16 22:32:39,648,1,periodic,watch,none,0.7
+2004-02-16 22:32:39,648,2,periodic,normal,none,1.0
+2004-02-16 22:32:39,648,3,periodic,normal,none,0.9
+2004-02-16 22:32:39,648,4,periodic,normal,none,0.9
+2004-02-16 22:42:39,649,1,change:['rms'],alert,unknown,0.7
+2004-02-16 23:32:39,654,1,recheck_while_abnormal,alert,unknown,0.7
+2004-02-17 00:32:39,660,1,recheck_while_abnormal,alert,unknown,0.7
+2004-02-17 01:32:39,666,1,recheck_while_abnormal,alert,unknown,0.7
+2004-02-17 02:32:39,672,1,recheck_while_abnormal,escalate,unknown,0.7
+2004-02-17 03:32:39,678,1,recheck_while_abnormal,escalate,unknown,0.7
+2004-02-17 04:32:39,684,1,recheck_while_abnormal,escalate,unknown,0.7
+2004-02-17 05:32:39,690,1,recheck_while_abnormal,escalate,unknown,0.8
+2004-02-17 06:32:39,696,1,recheck_while_abnormal,alert,unknown,0.7
+2004-02-17 07:32:39,702,1,recheck_while_abnormal,escalate,inner_race,0.8
+2004-02-17 07:52:39,704,1,"change:['kurtosis', 'rms']",escalate,inner_race,0.8
+2004-02-17 08:02:39,705,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.8
+2004-02-17 08:32:39,708,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 09:32:39,714,1,recheck_while_abnormal,escalate,outer_race,0.85
+2004-02-17 10:32:39,720,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 10:32:39,720,2,periodic,watch,none,0.7
+2004-02-17 10:32:39,720,3,periodic,watch,none,0.7
+2004-02-17 10:32:39,720,4,periodic,watch,none,0.7
+2004-02-17 10:42:39,721,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 11:32:39,726,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 11:42:39,727,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 12:02:39,729,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 12:12:39,730,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 12:32:39,732,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 12:42:39,733,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 13:02:39,735,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-17 13:32:39,738,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 14:32:39,744,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 15:32:39,750,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 16:32:39,756,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 17:32:39,762,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 18:12:39,766,1,change:['rms'],escalate,outer_race,0.8
+2004-02-17 18:32:39,768,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 19:32:39,774,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 20:32:39,780,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 21:32:39,786,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-17 22:02:39,789,1,change:back_to_normal,watch,outer_race,0.7
+2004-02-17 22:12:39,790,1,change:['rms'],alert,outer_race,0.8
+2004-02-17 22:32:39,792,1,recheck_while_abnormal,alert,outer_race,0.8
+2004-02-17 22:32:39,792,2,periodic,watch,none,0.7
+2004-02-17 22:32:39,792,3,periodic,watch,none,0.7
+2004-02-17 22:32:39,792,4,periodic,watch,none,0.7
+2004-02-17 23:32:39,798,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 00:32:39,804,1,recheck_while_abnormal,escalate,outer_race,0.8
+2004-02-18 01:32:39,810,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 02:32:39,816,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 03:32:39,822,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 04:32:39,828,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 05:32:39,834,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 05:42:39,835,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 06:32:39,840,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 06:42:39,841,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 06:52:39,842,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 07:32:39,846,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 07:52:39,848,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 08:32:39,852,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 09:32:39,858,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 09:42:39,859,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 10:12:39,862,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 10:22:39,863,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 10:32:39,864,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 10:32:39,864,2,periodic,watch,none,0.7
+2004-02-18 10:32:39,864,3,periodic,watch,none,0.7
+2004-02-18 10:32:39,864,4,periodic,watch,none,0.7
+2004-02-18 11:32:39,870,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 11:42:39,871,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 12:32:39,876,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 13:32:39,882,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 14:32:39,888,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 15:32:39,894,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 15:52:39,896,1,change:['rms'],escalate,outer_race,0.9
+2004-02-18 16:32:39,900,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 17:32:39,906,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 17:52:39,908,1,"change:['env_BPFO', 'rms']",escalate,outer_race,0.9
+2004-02-18 18:32:39,912,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 19:12:39,916,1,change:['rms'],escalate,outer_race,0.9
+2004-02-18 19:22:39,917,1,"change:['env_BPFO', 'rms']",escalate,outer_race,0.9
+2004-02-18 19:22:39,917,4,change:['rms'],watch,unknown,0.7
+2004-02-18 19:32:39,918,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 19:32:39,918,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-18 19:42:39,919,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 19:52:39,920,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-18 20:12:39,922,2,change:['rms'],alert,unknown,0.7
+2004-02-18 20:32:39,924,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 20:32:39,924,2,recheck_while_abnormal,alert,unknown,0.7
+2004-02-18 20:32:39,924,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-18 21:02:39,927,1,change:['rms'],escalate,outer_race,0.9
+2004-02-18 21:02:39,927,3,change:['rms'],watch,none,0.7
+2004-02-18 21:32:39,930,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 21:32:39,930,2,recheck_while_abnormal,alert,unknown,0.7
+2004-02-18 21:32:39,930,3,recheck_while_abnormal,watch,unknown,0.7
+2004-02-18 21:32:39,930,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-18 22:32:39,936,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 22:32:39,936,2,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-18 22:32:39,936,3,recheck_while_abnormal,alert,unknown,0.7
+2004-02-18 22:32:39,936,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-18 22:42:39,937,1,"change:['env_BPFO', 'rms']",escalate,outer_race,0.9
+2004-02-18 23:12:39,940,1,change:['rms'],escalate,outer_race,0.9
+2004-02-18 23:32:39,942,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-18 23:32:39,942,2,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-18 23:32:39,942,3,recheck_while_abnormal,alert,unknown,0.7
+2004-02-18 23:32:39,942,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 00:12:39,946,1,"change:['env_BPFO', 'rms']",escalate,outer_race,0.9
+2004-02-19 00:22:39,947,1,change:['rms'],escalate,outer_race,0.9
+2004-02-19 00:32:39,948,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-19 00:32:39,948,2,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 00:32:39,948,3,recheck_while_abnormal,escalate,unknown,0.7
+2004-02-19 00:32:39,948,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 01:32:39,954,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-19 01:32:39,954,2,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-19 01:32:39,954,3,recheck_while_abnormal,escalate,rig_wide,0.7
+2004-02-19 01:32:39,954,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 01:42:39,955,1,"change:['env_BPFO', 'rms']",escalate,outer_race,0.9
+2004-02-19 02:12:39,958,3,change:back_to_normal,watch,rig_wide,0.7
+2004-02-19 02:32:39,960,1,change:['rms'],escalate,outer_race,0.9
+2004-02-19 02:32:39,960,2,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-19 02:32:39,960,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 02:52:39,962,3,change:['rms'],escalate,rig_wide,0.8
+2004-02-19 03:32:39,966,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-19 03:32:39,966,2,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-19 03:32:39,966,3,recheck_while_abnormal,escalate,rig_wide,0.8
+2004-02-19 03:32:39,966,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 04:32:39,972,1,"change:['kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-19 04:32:39,972,2,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-19 04:32:39,972,3,recheck_while_abnormal,escalate,rig_wide,0.8
+2004-02-19 04:32:39,972,4,recheck_while_abnormal,watch,rig_wide,0.7
+2004-02-19 05:02:39,975,1,"change:['env_BPFO', 'kurtosis', 'rms']",escalate,outer_race,0.9
+2004-02-19 05:22:39,977,2,"change:['env_BPFO', 'rms']",alert,outer_race,0.7
+2004-02-19 05:32:39,978,1,recheck_while_abnormal,escalate,outer_race,0.9
+2004-02-19 05:32:39,978,2,recheck_while_abnormal,alert,outer_race,0.7
+2004-02-19 05:32:39,978,3,recheck_while_abnormal,alert,rig_wide,0.7
+2004-02-19 05:32:39,978,4,recheck_while_abnormal,alert,outer_race,0.7
+2004-02-19 06:12:39,982,1,invalid_data,escalate,unknown,1.0
+2004-02-19 06:12:39,982,2,invalid_data,escalate,unknown,1.0
+2004-02-19 06:12:39,982,3,invalid_data,escalate,unknown,1.0
+2004-02-19 06:12:39,982,4,invalid_data,escalate,unknown,1.0
+2004-02-19 06:22:39,983,1,invalid_data,escalate,unknown,1.0
+2004-02-19 06:22:39,983,2,invalid_data,escalate,unknown,1.0
+2004-02-19 06:22:39,983,3,invalid_data,escalate,unknown,1.0
+2004-02-19 06:22:39,983,4,invalid_data,escalate,unknown,1.0
