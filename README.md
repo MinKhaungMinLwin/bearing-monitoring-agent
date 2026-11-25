@@ -11,7 +11,8 @@ This project is a decision-support agent for the IMS bearing run-to-failure data
 - `.env.example`: a template for your own API settings.
 
 ## Data (not included)
-The data is the IMS Bearing Data Set from the NASA Prognostics Data Repository. Its Readme names Qiu et al. (2006) as the reference paper. Download it and put the files under `data/ims/`:
+The data is the IMS Bearing Data Set (Lee et al., 2007), provided by the Center for Intelligent Maintenance Systems, University of Cincinnati, and published in the NASA Prognostics Data Repository: https://data.nasa.gov/dataset/ims-bearings (direct ZIP: https://phm-datasets.s3.amazonaws.com/NASA/4.+Bearings.zip). Its Readme names Qiu et al. (2006) as the reference paper. Download it and put the files under `data/ims/`:
+
 - `2nd_test.rar` unpacks to `data/ims/2nd_test/`.
 - `3rd_test.rar` unpacks to `data/ims/4th_test/txt/`. The folder name really is `4th_test`.
 
@@ -27,6 +28,11 @@ The four expensive steps each have a flag: `RUN_AGENT` (full test 2 run, about 3
 A Restart & Run All still needs two things:
 - **An API key.** The setup cell creates the client and sends one test call, and the Trial 2 cell (section 9) makes about 4 agent assessments.
 - **The raw data.** Sections 1 and 2 compute the test 2 features from the raw files, and section 15 reads the list of test 3 files. Test 3's features are cached in `results/test3_features.csv`.
+
+## References
+Lee, J., Qiu, H., Yu, G., Lin, J., & Rexnord Technical Services. (2007). *Bearing data set* [Data set]. IMS, University of Cincinnati; NASA Prognostics Data Repository, NASA Ames Research Center. https://data.nasa.gov/dataset/ims-bearings
+
+Qiu, H., Lee, J., Lin, J., & Yu, G. (2006). Wavelet filter-based weak signature detection method and its application on rolling element bearing prognostics. *Journal of Sound and Vibration, 289*(4–5), 1066–1090. https://doi.org/10.1016/j.jsv.2005.03.007
 
 ## AI assistance
 [Your disclosure: what you used AI help for, e.g. debugging, code review, the architecture diagram.]
