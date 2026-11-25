@@ -6,3 +6,4 @@ __pycache__/
 data/ims/
 logs/*
 !logs/test2_trace.jsonl
+!logs/test3_trace.jsonl
