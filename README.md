@@ -33,6 +33,3 @@ A Restart & Run All still needs two things:
 Lee, J., Qiu, H., Yu, G., Lin, J., & Rexnord Technical Services. (2007). *Bearing data set* [Data set]. IMS, University of Cincinnati; NASA Prognostics Data Repository, NASA Ames Research Center. https://data.nasa.gov/dataset/ims-bearings
 
 Qiu, H., Lee, J., Lin, J., & Yu, G. (2006). Wavelet filter-based weak signature detection method and its application on rolling element bearing prognostics. *Journal of Sound and Vibration, 289*(4–5), 1066–1090. https://doi.org/10.1016/j.jsv.2005.03.007
-
-## AI assistance
-[Your disclosure: what you used AI help for, e.g. debugging, code review, the architecture diagram.]
