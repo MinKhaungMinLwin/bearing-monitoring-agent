@@ -1,0 +1,47 @@
+digraph G {
+  graph [rankdir=TB, fontname="Helvetica", fontsize=11, nodesep=0.35, ranksep=0.4, pad=0.2, newrank=true];
+  node  [shape=box, style="rounded,filled", fillcolor="white", color="#333333", fontname="Helvetica", fontsize=10, margin="0.12,0.06"];
+  edge  [color="#333333", fontname="Helvetica", fontsize=9, arrowsize=0.7];
+
+  data  [label=<<b>IMS vibration snapshots</b><br/>4 bearings, 20,480 samples / 1 s, every 10 min>, fillcolor="#eeeeee"];
+  feat  [label=<<b>Feature extraction</b> (deterministic)<br/>RMS, kurtosis, crest factor;<br/>envelope at BPFO / BPFI / BSF / FTF>];
+  base  [label=<<b>Baseline</b><br/>first 144 snapshots (24 h),<br/>per bearing>];
+  router [label=<<b>Router</b> (rule-based, no LLM)<br/>RMS &gt; 1.3× baseline or z &gt; 4 on 1-h median<br/>periodic check every 12 h; re-check hourly while abnormal>, fillcolor="#dddddd"];
+  sleep [label="No change:\nno LLM call", shape=box, style="rounded,dashed"];
+  rule  [label=<<b>Invalid-data rule</b><br/>RMS &lt; 0.01 → escalate<br/>(bypasses the LLM)>];
+
+  subgraph cluster_agent {
+    label=<<b>ReliabilityAgent</b>  (gpt-4o-mini, temperature 0, max 8 steps)>; labeljust="l";
+    style="rounded"; color="#333333"; fontsize=10;
+    llm [label=<<b>LLM reasoning loop</b><br/>system prompt: recommend, never act;<br/>use memory + tools before deciding>, fillcolor="#dddddd"];
+    tools [label=<<b>Tools</b> (read-only)<br/>get_indicators · get_trend<br/>compare_bearings · fault_frequency_evidence<br/>get_memory>];
+    submit [label=<<b>submit_decision</b> (fixed schema)<br/>status · suspected_fault · confidence<br/>evidence · rationale>];
+    guard [label=<<b>Guardrails</b><br/>1. numbers must appear in tool outputs (1 retry)<br/>2. forced decision 2 steps before limit<br/>3. step limit reached → escalate (fallback)<br/>4. sticky flag: flagged bearing never back to normal>, fillcolor="#eeeeee"];
+    llm -> tools [label=" tool call /\n result", dir=both];
+    {rank=same; llm; tools}
+    llm -> submit;
+    submit -> guard;
+    guard -> llm [label=" rejected:\n retry", style=dashed, constraint=false];
+  }
+
+  mem   [label=<<b>Memory</b> (per bearing)<br/>past decisions with source label<br/>(agent / fallback / data_rule); ever_flagged>, shape=cylinder, style=filled, fillcolor="#eeeeee"];
+  dec   [label=<<b>Decision</b><br/>normal · watch · alert · escalate>];
+  human [label=<<b>Human reviewer</b><br/>escalate → approval "pending";<br/>all physical actions stay with people>, fillcolor="#dddddd"];
+  trace [label=<<b>Trace log</b> (JSONL)<br/>every tool call, rejection,<br/>forced decision, final decision>, shape=note, style=filled, fillcolor="#eeeeee"];
+
+  data -> feat -> base -> router;
+  feat -> router [style=dashed, label=" features"];
+  router -> sleep [label=" no change"];
+  router -> rule  [label="invalid data", constraint=false];
+  router -> llm   [label=" change / re-check / periodic"];
+  tools -> mem [label=" read"];
+  {rank=same; guard; mem}
+  guard -> dec [label=" accepted"];
+  rule -> dec;
+  dec -> mem [label=" write", style=dashed];
+  dec -> human;
+  dec -> trace [style=dotted, label=" every step\n is logged"];
+
+  {rank=same; router; sleep; rule}
+  router -> sleep -> rule [style=invis, minlen=1];
+}
